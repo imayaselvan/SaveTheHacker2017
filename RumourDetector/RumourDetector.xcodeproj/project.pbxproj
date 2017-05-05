@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA1E34B1EBD07C40018B344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */; };
+		CEA1E34D1EBD07C40018B344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34C1EBD07C40018B344 /* ViewController.swift */; };
+		CEA1E3501EBD07C40018B344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E34E1EBD07C40018B344 /* Main.storyboard */; };
+		CEA1E3521EBD07C40018B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3511EBD07C40018B344 /* Assets.xcassets */; };
+		CEA1E3551EBD07C40018B344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3531EBD07C40018B344 /* LaunchScreen.storyboard */; };
+		CEA1E3601EBD07C50018B344 /* RumourDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E35F1EBD07C50018B344 /* RumourDetectorTests.swift */; };
+		CEA1E36B1EBD07C50018B344 /* RumourDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E36A1EBD07C50018B344 /* RumourDetectorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA1E35C1EBD07C50018B344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA1E33F1EBD07C40018B344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA1E3461EBD07C40018B344;
+			remoteInfo = RumourDetector;
+		};
+		CEA1E3671EBD07C50018B344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA1E33F1EBD07C40018B344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA1E3461EBD07C40018B344;
+			remoteInfo = RumourDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA1E3471EBD07C40018B344 /* RumourDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RumourDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA1E34C1EBD07C40018B344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA1E34F1EBD07C40018B344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA1E3511EBD07C40018B344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA1E3541EBD07C40018B344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA1E3561EBD07C40018B344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA1E35B1EBD07C50018B344 /* RumourDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumourDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA1E35F1EBD07C50018B344 /* RumourDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumourDetectorTests.swift; sourceTree = "<group>"; };
+		CEA1E3611EBD07C50018B344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumourDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA1E36A1EBD07C50018B344 /* RumourDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumourDetectorUITests.swift; sourceTree = "<group>"; };
+		CEA1E36C1EBD07C50018B344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA1E3441EBD07C40018B344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3581EBD07C50018B344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3631EBD07C50018B344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA1E33E1EBD07C40018B344 = {
+			isa = PBXGroup;
+			children = (
+				CEA1E3491EBD07C40018B344 /* RumourDetector */,
+				CEA1E35E1EBD07C50018B344 /* RumourDetectorTests */,
+				CEA1E3691EBD07C50018B344 /* RumourDetectorUITests */,
+				CEA1E3481EBD07C40018B344 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA1E3481EBD07C40018B344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E3471EBD07C40018B344 /* RumourDetector.app */,
+				CEA1E35B1EBD07C50018B344 /* RumourDetectorTests.xctest */,
+				CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA1E3491EBD07C40018B344 /* RumourDetector */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */,
+				CEA1E34C1EBD07C40018B344 /* ViewController.swift */,
+				CEA1E34E1EBD07C40018B344 /* Main.storyboard */,
+				CEA1E3511EBD07C40018B344 /* Assets.xcassets */,
+				CEA1E3531EBD07C40018B344 /* LaunchScreen.storyboard */,
+				CEA1E3561EBD07C40018B344 /* Info.plist */,
+			);
+			path = RumourDetector;
+			sourceTree = "<group>";
+		};
+		CEA1E35E1EBD07C50018B344 /* RumourDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E35F1EBD07C50018B344 /* RumourDetectorTests.swift */,
+				CEA1E3611EBD07C50018B344 /* Info.plist */,
+			);
+			path = RumourDetectorTests;
+			sourceTree = "<group>";
+		};
+		CEA1E3691EBD07C50018B344 /* RumourDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E36A1EBD07C50018B344 /* RumourDetectorUITests.swift */,
+				CEA1E36C1EBD07C50018B344 /* Info.plist */,
+			);
+			path = RumourDetectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA1E3461EBD07C40018B344 /* RumourDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA1E36F1EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetector" */;
+			buildPhases = (
+				CEA1E3431EBD07C40018B344 /* Sources */,
+				CEA1E3441EBD07C40018B344 /* Frameworks */,
+				CEA1E3451EBD07C40018B344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RumourDetector;
+			productName = RumourDetector;
+			productReference = CEA1E3471EBD07C40018B344 /* RumourDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA1E35A1EBD07C50018B344 /* RumourDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA1E3721EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorTests" */;
+			buildPhases = (
+				CEA1E3571EBD07C50018B344 /* Sources */,
+				CEA1E3581EBD07C50018B344 /* Frameworks */,
+				CEA1E3591EBD07C50018B344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA1E35D1EBD07C50018B344 /* PBXTargetDependency */,
+			);
+			name = RumourDetectorTests;
+			productName = RumourDetectorTests;
+			productReference = CEA1E35B1EBD07C50018B344 /* RumourDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA1E3651EBD07C50018B344 /* RumourDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA1E3751EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorUITests" */;
+			buildPhases = (
+				CEA1E3621EBD07C50018B344 /* Sources */,
+				CEA1E3631EBD07C50018B344 /* Frameworks */,
+				CEA1E3641EBD07C50018B344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA1E3681EBD07C50018B344 /* PBXTargetDependency */,
+			);
+			name = RumourDetectorUITests;
+			productName = RumourDetectorUITests;
+			productReference = CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA1E33F1EBD07C40018B344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Imayaselvan;
+				TargetAttributes = {
+					CEA1E3461EBD07C40018B344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CEA1E35A1EBD07C50018B344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEA1E3461EBD07C40018B344;
+					};
+					CEA1E3651EBD07C50018B344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEA1E3461EBD07C40018B344;
+					};
+				};
+			};
+			buildConfigurationList = CEA1E3421EBD07C40018B344 /* Build configuration list for PBXProject "RumourDetector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA1E33E1EBD07C40018B344;
+			productRefGroup = CEA1E3481EBD07C40018B344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA1E3461EBD07C40018B344 /* RumourDetector */,
+				CEA1E35A1EBD07C50018B344 /* RumourDetectorTests */,
+				CEA1E3651EBD07C50018B344 /* RumourDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA1E3451EBD07C40018B344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E3551EBD07C40018B344 /* LaunchScreen.storyboard in Resources */,
+				CEA1E3521EBD07C40018B344 /* Assets.xcassets in Resources */,
+				CEA1E3501EBD07C40018B344 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3591EBD07C50018B344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3641EBD07C50018B344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA1E3431EBD07C40018B344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E34D1EBD07C40018B344 /* ViewController.swift in Sources */,
+				CEA1E34B1EBD07C40018B344 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3571EBD07C50018B344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E3601EBD07C50018B344 /* RumourDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA1E3621EBD07C50018B344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E36B1EBD07C50018B344 /* RumourDetectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA1E35D1EBD07C50018B344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA1E3461EBD07C40018B344 /* RumourDetector */;
+			targetProxy = CEA1E35C1EBD07C50018B344 /* PBXContainerItemProxy */;
+		};
+		CEA1E3681EBD07C50018B344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA1E3461EBD07C40018B344 /* RumourDetector */;
+			targetProxy = CEA1E3671EBD07C50018B344 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA1E34E1EBD07C40018B344 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA1E34F1EBD07C40018B344 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA1E3531EBD07C40018B344 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA1E3541EBD07C40018B344 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA1E36D1EBD07C50018B344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA1E36E1EBD07C50018B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA1E3701EBD07C50018B344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RumourDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEA1E3711EBD07C50018B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RumourDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEA1E3731EBD07C50018B344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RumourDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RumourDetector.app/RumourDetector";
+			};
+			name = Debug;
+		};
+		CEA1E3741EBD07C50018B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RumourDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RumourDetector.app/RumourDetector";
+			};
+			name = Release;
+		};
+		CEA1E3761EBD07C50018B344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RumourDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RumourDetector;
+			};
+			name = Debug;
+		};
+		CEA1E3771EBD07C50018B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RumourDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RumourDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA1E3421EBD07C40018B344 /* Build configuration list for PBXProject "RumourDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1E36D1EBD07C50018B344 /* Debug */,
+				CEA1E36E1EBD07C50018B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA1E36F1EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1E3701EBD07C50018B344 /* Debug */,
+				CEA1E3711EBD07C50018B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA1E3721EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1E3731EBD07C50018B344 /* Debug */,
+				CEA1E3741EBD07C50018B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA1E3751EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1E3761EBD07C50018B344 /* Debug */,
+				CEA1E3771EBD07C50018B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA1E33F1EBD07C40018B344 /* Project object */;
+}
