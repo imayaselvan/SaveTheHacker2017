@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7B62C51EBD89E500A2E0CA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */; };
 		CEA1E34B1EBD07C40018B344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */; };
 		CEA1E34D1EBD07C40018B344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34C1EBD07C40018B344 /* ViewController.swift */; };
 		CEA1E3501EBD07C40018B344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E34E1EBD07C40018B344 /* Main.storyboard */; };
@@ -14,6 +15,28 @@
 		CEA1E3551EBD07C40018B344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3531EBD07C40018B344 /* LaunchScreen.storyboard */; };
 		CEA1E3601EBD07C50018B344 /* RumourDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E35F1EBD07C50018B344 /* RumourDetectorTests.swift */; };
 		CEA1E36B1EBD07C50018B344 /* RumourDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E36A1EBD07C50018B344 /* RumourDetectorUITests.swift */; };
+		CEA1E37F1EBD0EB20018B344 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */; };
+		CEA1E3821EBD0EB20018B344 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E3811EBD0EB20018B344 /* TodayViewController.swift */; };
+		CEA1E3851EBD0EB20018B344 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3831EBD0EB20018B344 /* MainInterface.storyboard */; };
+		CEA1E3891EBD0EB20018B344 /* BruitBreak.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEA1E37C1EBD0EB20018B344 /* BruitBreak.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEA1E38F1EBD14870018B344 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E38E1EBD14870018B344 /* PieChartView.swift */; };
+		CEA1E3931EBD17B30018B344 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E3921EBD17B30018B344 /* UIColor+Utilities.swift */; };
+		CEA1E3941EBD17BB0018B344 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E3921EBD17B30018B344 /* UIColor+Utilities.swift */; };
+		CEA1E3961EBD17ED0018B344 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1E3951EBD17ED0018B344 /* Cartography.framework */; };
+		CEA1E39B1EBD1ADA0018B344 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3991EBD1ADA0018B344 /* Cabin-Medium.ttf */; };
+		CEA1E39C1EBD1ADA0018B344 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3991EBD1ADA0018B344 /* Cabin-Medium.ttf */; };
+		CEA1E39D1EBD1ADA0018B344 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E39A1EBD1ADA0018B344 /* Cabin-Regular.ttf */; };
+		CEA1E39E1EBD1ADA0018B344 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E39A1EBD1ADA0018B344 /* Cabin-Regular.ttf */; };
+		CEA1E3A01EBD1AE40018B344 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E39F1EBD1AE40018B344 /* BebasNeue.otf */; };
+		CEA1E3A11EBD1AE40018B344 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E39F1EBD1AE40018B344 /* BebasNeue.otf */; };
+		CEA1E3A61EBD20880018B344 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A21EBD20880018B344 /* AppIcon.appiconset */; };
+		CEA1E3A71EBD20880018B344 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A21EBD20880018B344 /* AppIcon.appiconset */; };
+		CEA1E3A81EBD20880018B344 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A31EBD20880018B344 /* iTunesArtwork@1x.png */; };
+		CEA1E3A91EBD20880018B344 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A31EBD20880018B344 /* iTunesArtwork@1x.png */; };
+		CEA1E3AA1EBD20880018B344 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */; };
+		CEA1E3AB1EBD20880018B344 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */; };
+		CEA1E3AC1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
+		CEA1E3AD1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +54,34 @@
 			remoteGlobalIDString = CEA1E3461EBD07C40018B344;
 			remoteInfo = RumourDetector;
 		};
+		CEA1E3871EBD0EB20018B344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA1E33F1EBD07C40018B344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA1E37B1EBD0EB20018B344;
+			remoteInfo = BruitBreak;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEA1E38D1EBD0EB20018B344 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEA1E3891EBD0EB20018B344 /* BruitBreak.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RumourDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8B84C56D4A374F511D8016C /* Pods-RumourDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumourDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		CE7B62BF1EBD895400A2E0CA /* CircleLoading.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CircleLoading.framework; path = "../../../Library/Developer/Xcode/DerivedData/RumourDetector-bqwognjfqnikqrfznybkiqvhtrcq/Build/Products/Debug-iphonesimulator/CircleLoading/CircleLoading.framework"; sourceTree = "<group>"; };
+		CE7B62C11EBD897000A2E0CA /* Pods_RumourDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_RumourDetector.framework; path = "Pods/../build/Debug-iphoneos/Pods_RumourDetector.framework"; sourceTree = "<group>"; };
 		CEA1E3471EBD07C40018B344 /* RumourDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RumourDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA1E34C1EBD07C40018B344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +95,22 @@
 		CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RumourDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA1E36A1EBD07C50018B344 /* RumourDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumourDetectorUITests.swift; sourceTree = "<group>"; };
 		CEA1E36C1EBD07C50018B344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA1E37C1EBD0EB20018B344 /* BruitBreak.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BruitBreak.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CEA1E3811EBD0EB20018B344 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CEA1E3841EBD0EB20018B344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CEA1E3861EBD0EB20018B344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA1E38E1EBD14870018B344 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		CEA1E3921EBD17B30018B344 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		CEA1E3951EBD17ED0018B344 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		CEA1E3991EBD1ADA0018B344 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		CEA1E39A1EBD1ADA0018B344 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		CEA1E39F1EBD1AE40018B344 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		CEA1E3A21EBD20880018B344 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../AppIcon.appiconset; sourceTree = "<group>"; };
+		CEA1E3A31EBD20880018B344 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumourDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7B62C51EBD89E500A2E0CA /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +136,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA1E3791EBD0EB20018B344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E3961EBD17ED0018B344 /* Cartography.framework in Frameworks */,
+				CEA1E37F1EBD0EB20018B344 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C45D5C724EC562EF337DE9DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8B84C56D4A374F511D8016C /* Pods-RumourDetector.debug.xcconfig */,
+				E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEA1E33E1EBD07C40018B344 = {
 			isa = PBXGroup;
 			children = (
+				CEA1E3921EBD17B30018B344 /* UIColor+Utilities.swift */,
+				CEA1E3A31EBD20880018B344 /* iTunesArtwork@1x.png */,
+				CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */,
+				CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */,
 				CEA1E3491EBD07C40018B344 /* RumourDetector */,
 				CEA1E35E1EBD07C50018B344 /* RumourDetectorTests */,
 				CEA1E3691EBD07C50018B344 /* RumourDetectorUITests */,
+				CEA1E3801EBD0EB20018B344 /* BruitBreak */,
+				CEA1E37D1EBD0EB20018B344 /* Frameworks */,
 				CEA1E3481EBD07C40018B344 /* Products */,
+				C45D5C724EC562EF337DE9DE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +180,7 @@
 				CEA1E3471EBD07C40018B344 /* RumourDetector.app */,
 				CEA1E35B1EBD07C50018B344 /* RumourDetectorTests.xctest */,
 				CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */,
+				CEA1E37C1EBD0EB20018B344 /* BruitBreak.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +188,10 @@
 		CEA1E3491EBD07C40018B344 /* RumourDetector */ = {
 			isa = PBXGroup;
 			children = (
+				CEA1E3A21EBD20880018B344 /* AppIcon.appiconset */,
+				CEA1E39F1EBD1AE40018B344 /* BebasNeue.otf */,
+				CEA1E3991EBD1ADA0018B344 /* Cabin-Medium.ttf */,
+				CEA1E39A1EBD1ADA0018B344 /* Cabin-Regular.ttf */,
 				CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */,
 				CEA1E34C1EBD07C40018B344 /* ViewController.swift */,
 				CEA1E34E1EBD07C40018B344 /* Main.storyboard */,
@@ -125,6 +220,29 @@
 			path = RumourDetectorUITests;
 			sourceTree = "<group>";
 		};
+		CEA1E37D1EBD0EB20018B344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B62C11EBD897000A2E0CA /* Pods_RumourDetector.framework */,
+				CE7B62BF1EBD895400A2E0CA /* CircleLoading.framework */,
+				CEA1E3951EBD17ED0018B344 /* Cartography.framework */,
+				CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */,
+				4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA1E3801EBD0EB20018B344 /* BruitBreak */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1E3811EBD0EB20018B344 /* TodayViewController.swift */,
+				CEA1E3831EBD0EB20018B344 /* MainInterface.storyboard */,
+				CEA1E3861EBD0EB20018B344 /* Info.plist */,
+				CEA1E38E1EBD14870018B344 /* PieChartView.swift */,
+			);
+			path = BruitBreak;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +250,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA1E36F1EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetector" */;
 			buildPhases = (
+				32E8F4C8F03D7D8893D0039D /* [CP] Check Pods Manifest.lock */,
 				CEA1E3431EBD07C40018B344 /* Sources */,
 				CEA1E3441EBD07C40018B344 /* Frameworks */,
 				CEA1E3451EBD07C40018B344 /* Resources */,
+				CEA1E38D1EBD0EB20018B344 /* Embed App Extensions */,
+				FF6BDE791755AA888CF05C46 /* [CP] Embed Pods Frameworks */,
+				12C646CFEABEA596C1807C35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEA1E3881EBD0EB20018B344 /* PBXTargetDependency */,
 			);
 			name = RumourDetector;
 			productName = RumourDetector;
@@ -181,6 +304,24 @@
 			productReference = CEA1E3661EBD07C50018B344 /* RumourDetectorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CEA1E37B1EBD0EB20018B344 /* BruitBreak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA1E38A1EBD0EB20018B344 /* Build configuration list for PBXNativeTarget "BruitBreak" */;
+			buildPhases = (
+				CEA1E3781EBD0EB20018B344 /* Sources */,
+				CEA1E3791EBD0EB20018B344 /* Frameworks */,
+				CEA1E37A1EBD0EB20018B344 /* Resources */,
+				CEA1E3911EBD17250018B344 /* Carthage Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BruitBreak;
+			productName = BruitBreak;
+			productReference = CEA1E37C1EBD0EB20018B344 /* BruitBreak.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +334,7 @@
 				TargetAttributes = {
 					CEA1E3461EBD07C40018B344 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PREW6LN2MP;
 						ProvisioningStyle = Automatic;
 					};
 					CEA1E35A1EBD07C50018B344 = {
@@ -204,6 +346,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CEA1E3461EBD07C40018B344;
+					};
+					CEA1E37B1EBD0EB20018B344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PREW6LN2MP;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -223,6 +370,7 @@
 				CEA1E3461EBD07C40018B344 /* RumourDetector */,
 				CEA1E35A1EBD07C50018B344 /* RumourDetectorTests */,
 				CEA1E3651EBD07C50018B344 /* RumourDetectorUITests */,
+				CEA1E37B1EBD0EB20018B344 /* BruitBreak */,
 			);
 		};
 /* End PBXProject section */
@@ -232,9 +380,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA1E39D1EBD1ADA0018B344 /* Cabin-Regular.ttf in Resources */,
 				CEA1E3551EBD07C40018B344 /* LaunchScreen.storyboard in Resources */,
+				CEA1E3A81EBD20880018B344 /* iTunesArtwork@1x.png in Resources */,
+				CEA1E3A01EBD1AE40018B344 /* BebasNeue.otf in Resources */,
+				CEA1E3AA1EBD20880018B344 /* iTunesArtwork@2x.png in Resources */,
 				CEA1E3521EBD07C40018B344 /* Assets.xcassets in Resources */,
+				CEA1E3AC1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */,
+				CEA1E3A61EBD20880018B344 /* AppIcon.appiconset in Resources */,
 				CEA1E3501EBD07C40018B344 /* Main.storyboard in Resources */,
+				CEA1E39B1EBD1ADA0018B344 /* Cabin-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +407,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA1E37A1EBD0EB20018B344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E39C1EBD1ADA0018B344 /* Cabin-Medium.ttf in Resources */,
+				CEA1E39E1EBD1ADA0018B344 /* Cabin-Regular.ttf in Resources */,
+				CEA1E3AB1EBD20880018B344 /* iTunesArtwork@2x.png in Resources */,
+				CEA1E3851EBD0EB20018B344 /* MainInterface.storyboard in Resources */,
+				CEA1E3AD1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */,
+				CEA1E3A71EBD20880018B344 /* AppIcon.appiconset in Resources */,
+				CEA1E3A91EBD20880018B344 /* iTunesArtwork@1x.png in Resources */,
+				CEA1E3A11EBD1AE40018B344 /* BebasNeue.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12C646CFEABEA596C1807C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E8F4C8F03D7D8893D0039D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA1E3911EBD17250018B344 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
+			);
+			name = "Carthage Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		FF6BDE791755AA888CF05C46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEA1E3431EBD07C40018B344 /* Sources */ = {
@@ -261,6 +494,7 @@
 			files = (
 				CEA1E34D1EBD07C40018B344 /* ViewController.swift in Sources */,
 				CEA1E34B1EBD07C40018B344 /* AppDelegate.swift in Sources */,
+				CEA1E3941EBD17BB0018B344 /* UIColor+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +514,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA1E3781EBD0EB20018B344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA1E38F1EBD14870018B344 /* PieChartView.swift in Sources */,
+				CEA1E3821EBD0EB20018B344 /* TodayViewController.swift in Sources */,
+				CEA1E3931EBD17B30018B344 /* UIColor+Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +536,11 @@
 			isa = PBXTargetDependency;
 			target = CEA1E3461EBD07C40018B344 /* RumourDetector */;
 			targetProxy = CEA1E3671EBD07C50018B344 /* PBXContainerItemProxy */;
+		};
+		CEA1E3881EBD0EB20018B344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA1E37B1EBD0EB20018B344 /* BruitBreak */;
+			targetProxy = CEA1E3871EBD0EB20018B344 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +559,14 @@
 				CEA1E3541EBD07C40018B344 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA1E3831EBD0EB20018B344 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA1E3841EBD0EB20018B344 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,11 +667,19 @@
 		};
 		CEA1E3701EBD07C50018B344 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B84C56D4A374F511D8016C /* Pods-RumourDetector.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = PREW6LN2MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RumourDetector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -422,11 +687,19 @@
 		};
 		CEA1E3711EBD07C50018B344 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = PREW6LN2MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RumourDetector/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imay.fake.RumourDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -486,6 +759,46 @@
 			};
 			name = Release;
 		};
+		CEA1E38B1EBD0EB20018B344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				DEVELOPMENT_TEAM = PREW6LN2MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = BruitBreak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.app1.BruitBreak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEA1E38C1EBD0EB20018B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				DEVELOPMENT_TEAM = PREW6LN2MP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = BruitBreak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imay.app1.BruitBreak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -505,6 +818,7 @@
 				CEA1E3711EBD07C50018B344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA1E3721EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +827,7 @@
 				CEA1E3741EBD07C50018B344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA1E3751EBD07C50018B344 /* Build configuration list for PBXNativeTarget "RumourDetectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +836,16 @@
 				CEA1E3771EBD07C50018B344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA1E38A1EBD0EB20018B344 /* Build configuration list for PBXNativeTarget "BruitBreak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1E38B1EBD0EB20018B344 /* Debug */,
+				CEA1E38C1EBD0EB20018B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
