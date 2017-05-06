@@ -156,55 +156,78 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func render() {
-        loadingView.startAnimating()
+//        loadingView.startAnimating()
 
         copiedString = UIPasteboard.general.string ?? " "
         
         if copiedString.words.count > 3 {
             emptyView.isHidden = true
             graphView.isHidden = false
-            renderData()
+            loadingView.startAnimating()
+            graphView.title = ""
+            graphView.subtitle = ""
+
+            sendStringtoServer(searchText: copiedString)
         }
         else{
             emptyView.isHidden = false
         }
     }
     
-    func renderData() {
+    func sendStringtoServer(searchText: String) {
+        T365APIRequest.sharedAPI.getValue(text: searchText) { (success, rumour, error) in
 
-        statsTitleLabel.text = "Stats Data"
-        truthView.render("Truth", subtitle: "7%")
-        rumourView.render("Rumour", subtitle: "4%")
-        unknownView.render("Unknown", subtitle: "5%")
+            if success {
+                if let data = rumour {
+                    self.renderData(rumour: data)
+                }
+                self.loadingView.stopAnimating()
 
+            }else{
+                print(error ?? "Error")
+                self.emptyView.isHidden = false
+                self.contentView.isHidden = true
+                self.loadingView.stopAnimating()
+
+            }
+
+        }
+    }
+    
+    func renderData(rumour: rumourStats) {
         
-        var farms = Piechart.Slice()
-        farms.value = CGFloat(50)
-        farms.color = UIColor.graphProspectColor()
+        statsTitleLabel.text = "Stats"
+        truthView.render("Fact", subtitle: String(format:"%.1f %@", rumour.factPercentage,"%"))
+        rumourView.render("Rumour", subtitle: String(format:"%.1f %@", rumour.hoaxPercentage,"%"))
+        unknownView.render("Unknown", subtitle: String(format:"%.1f %@", rumour.unknownPercentage, "%"))
         
-        var zip = Piechart.Slice()
-        zip.value = 0
-        zip.color = UIColor.graphProspectColor()
+        var fact = Piechart.Slice()
+        fact.value = CGFloat(rumour.factPercentage)
+        fact.color = UIColor.graphLeadsColor()
         
-        var county = Piechart.Slice()
-        county.value = 0
-        county.color = UIColor.graphProspectColor()
+        var rumourSlice = Piechart.Slice()
+        rumourSlice.value = CGFloat(rumour.hoaxPercentage)
+        rumourSlice.color = UIColor.graphProspectColor()
         
-        var others = Piechart.Slice()
-        others.value = CGFloat(100 - 50)
-        others.color = UIColor.graphGreyColor()
+        var unknown = Piechart.Slice()
+        unknown.value = CGFloat(rumour.unknownPercentage)
+        unknown.color = UIColor.graphGreyColor()
         
-        graphView.slices = [farms, zip, county, others]
-        graphView.title = "\(50)%"
-        graphView.subtitle = "Fact"
-//        DispatchQueue.main.async {
-//            self.graphView.click()
-//        }
+//        var others = Piechart.Slice()
+//        others.value = CGFloat(100 - 50)
+//        others.color = UIColor.graphGreyColor()
+        
+        graphView.slices = [fact, rumourSlice, unknown]
+        graphView.title = "\(rumour.factPercentage)%"
+        graphView.subtitle = rumour.statusText
+        DispatchQueue.main.async {
+            self.graphView.click()
+        }
     }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
-        // If an error is encountered, use NCUpdateResult.Failed
+        // If an error//is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         

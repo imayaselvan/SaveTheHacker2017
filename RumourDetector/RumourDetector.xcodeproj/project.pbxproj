@@ -39,6 +39,7 @@
 		CEA1E3AC1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
 		CEA1E3AD1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
 		CEFB56E31EBD95EB0024009F /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFB56E21EBD95EB0024009F /* NVActivityIndicatorView.framework */; };
+		CEFB56E51EBDC68B0024009F /* T365APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB56E41EBDC68B0024009F /* T365APIRequest.swift */; };
 		E9890C570CDB1F8A2CAAACF4 /* Pods_RumourDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		CEFB56E01EBD95E00024009F /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = "Pods/../build/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework"; sourceTree = "<group>"; };
 		CEFB56E21EBD95EB0024009F /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = "Pods/../build/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework"; sourceTree = "<group>"; };
+		CEFB56E41EBDC68B0024009F /* T365APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = T365APIRequest.swift; path = ../../../../Desktop/T365APIRequest.swift; sourceTree = "<group>"; };
 		E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumourDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +253,7 @@
 		CEA1E3801EBD0EB20018B344 /* BruitBreak */ = {
 			isa = PBXGroup;
 			children = (
+				CEFB56E41EBDC68B0024009F /* T365APIRequest.swift */,
 				CEA1E3811EBD0EB20018B344 /* TodayViewController.swift */,
 				CEA1E3831EBD0EB20018B344 /* MainInterface.storyboard */,
 				CEA1E3861EBD0EB20018B344 /* Info.plist */,
@@ -496,6 +499,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/NVActivityIndicatorView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			name = "Carthage Script";
 			outputPaths = (
@@ -567,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFB56E51EBDC68B0024009F /* T365APIRequest.swift in Sources */,
 				CEA1E38F1EBD14870018B344 /* PieChartView.swift in Sources */,
 				CEA1E3821EBD0EB20018B344 /* TodayViewController.swift in Sources */,
 				CEA1E3931EBD17B30018B344 /* UIColor+Utilities.swift in Sources */,
