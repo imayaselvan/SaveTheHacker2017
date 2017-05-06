@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F19B4E055EBCF5AD0F5D7CB /* Pods_BruitBreak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7F37DB339A325452BC460A /* Pods_BruitBreak.framework */; };
 		CE7B62C51EBD89E500A2E0CA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */; };
 		CEA1E34B1EBD07C40018B344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34A1EBD07C40018B344 /* AppDelegate.swift */; };
 		CEA1E34D1EBD07C40018B344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E34C1EBD07C40018B344 /* ViewController.swift */; };
@@ -37,6 +38,8 @@
 		CEA1E3AB1EBD20880018B344 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */; };
 		CEA1E3AC1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
 		CEA1E3AD1EBD20880018B344 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */; };
+		CEFB56E31EBD95EB0024009F /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFB56E21EBD95EB0024009F /* NVActivityIndicatorView.framework */; };
+		E9890C570CDB1F8A2CAAACF4 /* Pods_RumourDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +81,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0282F52BC4A4546C08B8B1C2 /* Pods-BruitBreak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BruitBreak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BruitBreak/Pods-BruitBreak.debug.xcconfig"; sourceTree = "<group>"; };
 		4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RumourDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7F37DB339A325452BC460A /* Pods_BruitBreak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BruitBreak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96FF2F0224D7AD44D213A516 /* Pods-BruitBreak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BruitBreak.release.xcconfig"; path = "Pods/Target Support Files/Pods-BruitBreak/Pods-BruitBreak.release.xcconfig"; sourceTree = "<group>"; };
 		A8B84C56D4A374F511D8016C /* Pods-RumourDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumourDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7B62BF1EBD895400A2E0CA /* CircleLoading.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CircleLoading.framework; path = "../../../Library/Developer/Xcode/DerivedData/RumourDetector-bqwognjfqnikqrfznybkiqvhtrcq/Build/Products/Debug-iphonesimulator/CircleLoading/CircleLoading.framework"; sourceTree = "<group>"; };
 		CE7B62C11EBD897000A2E0CA /* Pods_RumourDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_RumourDetector.framework; path = "Pods/../build/Debug-iphoneos/Pods_RumourDetector.framework"; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		CEA1E3A31EBD20880018B344 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		CEA1E3A41EBD20880018B344 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		CEA1E3A51EBD20880018B344 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		CEFB56E01EBD95E00024009F /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = "Pods/../build/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework"; sourceTree = "<group>"; };
+		CEFB56E21EBD95EB0024009F /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = "Pods/../build/Debug-iphoneos/NVActivityIndicatorView/NVActivityIndicatorView.framework"; sourceTree = "<group>"; };
 		E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumourDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-RumourDetector/Pods-RumourDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7B62C51EBD89E500A2E0CA /* NotificationCenter.framework in Frameworks */,
+				E9890C570CDB1F8A2CAAACF4 /* Pods_RumourDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +149,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFB56E31EBD95EB0024009F /* NVActivityIndicatorView.framework in Frameworks */,
 				CEA1E3961EBD17ED0018B344 /* Cartography.framework in Frameworks */,
 				CEA1E37F1EBD0EB20018B344 /* NotificationCenter.framework in Frameworks */,
+				7F19B4E055EBCF5AD0F5D7CB /* Pods_BruitBreak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +164,8 @@
 			children = (
 				A8B84C56D4A374F511D8016C /* Pods-RumourDetector.debug.xcconfig */,
 				E384840F7FDD17A24DBCBC7E /* Pods-RumourDetector.release.xcconfig */,
+				0282F52BC4A4546C08B8B1C2 /* Pods-BruitBreak.debug.xcconfig */,
+				96FF2F0224D7AD44D213A516 /* Pods-BruitBreak.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -223,11 +236,14 @@
 		CEA1E37D1EBD0EB20018B344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEFB56E21EBD95EB0024009F /* NVActivityIndicatorView.framework */,
+				CEFB56E01EBD95E00024009F /* NVActivityIndicatorView.framework */,
 				CE7B62C11EBD897000A2E0CA /* Pods_RumourDetector.framework */,
 				CE7B62BF1EBD895400A2E0CA /* CircleLoading.framework */,
 				CEA1E3951EBD17ED0018B344 /* Cartography.framework */,
 				CEA1E37E1EBD0EB20018B344 /* NotificationCenter.framework */,
 				4F6766F87B5EBC851ACEA669 /* Pods_RumourDetector.framework */,
+				5A7F37DB339A325452BC460A /* Pods_BruitBreak.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,10 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA1E38A1EBD0EB20018B344 /* Build configuration list for PBXNativeTarget "BruitBreak" */;
 			buildPhases = (
+				43ED2C74B8096DB95020BCFF /* [CP] Check Pods Manifest.lock */,
 				CEA1E3781EBD0EB20018B344 /* Sources */,
 				CEA1E3791EBD0EB20018B344 /* Frameworks */,
 				CEA1E37A1EBD0EB20018B344 /* Resources */,
 				CEA1E3911EBD17250018B344 /* Carthage Script */,
+				E916F07DDDB6B4B22419BC3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,6 +473,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		43ED2C74B8096DB95020BCFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		CEA1E3911EBD17250018B344 /* Carthage Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,6 +495,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NVActivityIndicatorView.framework",
 			);
 			name = "Carthage Script";
 			outputPaths = (
@@ -469,6 +503,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E916F07DDDB6B4B22419BC3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BruitBreak/Pods-BruitBreak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FF6BDE791755AA888CF05C46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -675,6 +724,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NVActivityIndicatorView",
 				);
 				INFOPLIST_FILE = RumourDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -695,6 +745,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NVActivityIndicatorView",
 				);
 				INFOPLIST_FILE = RumourDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -761,6 +812,7 @@
 		};
 		CEA1E38B1EBD0EB20018B344 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0282F52BC4A4546C08B8B1C2 /* Pods-BruitBreak.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = PREW6LN2MP;
@@ -768,6 +820,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NVActivityIndicatorView",
 				);
 				INFOPLIST_FILE = BruitBreak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -781,6 +834,7 @@
 		};
 		CEA1E38C1EBD0EB20018B344 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FF2F0224D7AD44D213A516 /* Pods-BruitBreak.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = PREW6LN2MP;
@@ -788,6 +842,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NVActivityIndicatorView",
 				);
 				INFOPLIST_FILE = BruitBreak/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

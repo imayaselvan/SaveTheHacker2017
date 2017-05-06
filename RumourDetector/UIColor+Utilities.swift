@@ -147,6 +147,15 @@ extension UIColor {
                        blue:223/255.0,
                        alpha:1.0)
     }
+    static func loaderColor() -> UIColor {
+        return UIColor(red:212/255.0,
+                       green:175/255.0,
+                       blue:55,
+                       alpha:1.0)
+    }
+//    private var color1 = UIColor(red:0.98, green:0.43, blue:0.06, alpha:1.0)
+//    private var color2 = UIColor(red:0.97, green:0.67, blue:0.13, alpha:1.0)
+//    private var color3 = UIColor(red:0.85, green:0.11, blue:0.00, alpha:1.0)
 
     static func cellSeparatorDarkColor() -> UIColor {
         return UIColor(red:221/255.0,
