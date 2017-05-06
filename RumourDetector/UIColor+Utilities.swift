@@ -148,9 +148,9 @@ extension UIColor {
                        alpha:1.0)
     }
     static func loaderColor() -> UIColor {
-        return UIColor(red:212/255.0,
-                       green:175/255.0,
-                       blue:55,
+        return UIColor(red:9/255.0,
+                       green:107/255.0,
+                       blue:35,
                        alpha:1.0)
     }
 //    private var color1 = UIColor(red:0.98, green:0.43, blue:0.06, alpha:1.0)

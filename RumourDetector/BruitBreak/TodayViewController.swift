@@ -71,7 +71,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         contentView.addSubview(statsTitleLabel)
         
         lineSeperator = UIView()
-        lineSeperator.backgroundColor = UIColor.cellSeparatorDarkColor()
+        lineSeperator.backgroundColor = UIColor.appThemeGreyColor()
         contentView.addSubview(lineSeperator)
         
         lineSeperatorEnd = UIView()
@@ -333,7 +333,7 @@ class InfoView: UIView {
         case .rumour:
             titleLabel.textColor = UIColor.graphRumourColor()
         case .unknown:
-            titleLabel.textColor = UIColor.graphGreyColor()
+            titleLabel.textColor = UIColor.appThemeGreyColor()
 
         }
     }
