@@ -10,6 +10,11 @@ import UIKit
 import NotificationCenter
 import Cartography
 import NVActivityIndicatorView
+enum resultType: Int {
+    case truth = 0
+    case rumour = 1
+    case unknown = 2
+}
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     fileprivate var graphView: Piechart!
@@ -19,6 +24,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
    
     fileprivate var contentView: UIView!
     fileprivate var lineSeperator: UIView!
+    fileprivate var lineSeperatorEnd: UIView!
     fileprivate var truthView: InfoView!
     fileprivate var rumourView: InfoView!
     fileprivate var unknownView: InfoView!
@@ -26,7 +32,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     fileprivate var statsTitleLabel: UILabel! {
         didSet {
             statsTitleLabel.textColor = UIColor.textHighLightColor()
-            statsTitleLabel.font = UIFont(name: "BebasNeue", size: 15)
+            statsTitleLabel.font = UIFont(name: "BebasNeue", size: 10)
+            statsTitleLabel.lineBreakMode = .byWordWrapping
+            statsTitleLabel.numberOfLines = 0
+            statsTitleLabel.textAlignment = .center
         }
     }
     
@@ -65,6 +74,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         lineSeperator.backgroundColor = UIColor.cellSeparatorDarkColor()
         contentView.addSubview(lineSeperator)
         
+        lineSeperatorEnd = UIView()
+        lineSeperatorEnd.backgroundColor = UIColor.cellSeparatorDarkColor()
+        contentView.addSubview(lineSeperatorEnd)
+        
         truthView = InfoView()
         contentView.addSubview(truthView)
 
@@ -89,14 +102,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     fileprivate func initConstraints() {
         let margin: CGFloat = 15
-        let viewHeight: CGFloat = 23
+        let viewHeight: CGFloat = 15
         
         
         constrain(view, contentView, loadingView) { root, content, loader in
             fill(content, superview: root)
         }
         
-        constrain(contentView, statsTitleLabel, lineSeperator, graphView) { root, title, line, graph in
+        constrain(contentView, statsTitleLabel, lineSeperator, graphView, lineSeperatorEnd) { root, title, line, graph, lineEnd in
            
             graph.left == root.left + margin/2
             graph.top == root.top + margin/2
@@ -106,11 +119,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             title.top == root.top + margin/2
             title.left == graph.right + margin
             title.right == root.right - margin
+            title.bottom == graph.bottom / 2
             
             line.top == title.bottom + 3
             line.height == 2
             line.left == title.left
             line.right == title.right
+           
+            lineEnd.top == graph.bottom - 3
+            lineEnd.height == 0
+            lineEnd.left == title.left
+            lineEnd.right == title.right
         }
 
         constrain(lineSeperator, graphView, truthView, rumourView, unknownView) { line, graph , truth, rumour, unknown  in
@@ -118,7 +137,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             truth.height == viewHeight
             truth.left == line.left
             truth.right == line.right
-            truth.top == line.bottom
+            truth.top == line.bottom + 3
             
             rumour.top == truth.bottom
             rumour.left == truth.left
@@ -156,7 +175,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func render() {
-//        loadingView.startAnimating()
 
         copiedString = UIPasteboard.general.string ?? " "
         
@@ -164,6 +182,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             emptyView.isHidden = true
             graphView.isHidden = false
             loadingView.startAnimating()
+            
+            statsTitleLabel.text = copiedString
+            
             graphView.title = ""
             graphView.subtitle = ""
 
@@ -175,51 +196,65 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func sendStringtoServer(searchText: String) {
+        
         T365APIRequest.sharedAPI.getValue(text: searchText) { (success, rumour, error) in
-
-            if success {
-                if let data = rumour {
-                    self.renderData(rumour: data)
+            DispatchQueue.main.async {
+                
+                if success {
+                    if let data = rumour {
+                        self.renderData(rumour: data)
+                    }
+                    self.loadingView.stopAnimating()
+                    
+                }else{
+                    print(error ?? "Error")
+                    self.emptyView.isHidden = false
+                    self.contentView.isHidden = true
+                    self.loadingView.stopAnimating()
                 }
-                self.loadingView.stopAnimating()
-
-            }else{
-                print(error ?? "Error")
-                self.emptyView.isHidden = false
-                self.contentView.isHidden = true
-                self.loadingView.stopAnimating()
-
             }
-
         }
     }
     
     func renderData(rumour: rumourStats) {
         
-        statsTitleLabel.text = "Stats"
-        truthView.render("Fact", subtitle: String(format:"%.1f %@", rumour.factPercentage,"%"))
-        rumourView.render("Rumour", subtitle: String(format:"%.1f %@", rumour.hoaxPercentage,"%"))
-        unknownView.render("Unknown", subtitle: String(format:"%.1f %@", rumour.unknownPercentage, "%"))
+        
+        let factPercentage = Float(round(rumour.factPercentage ))
+        let rumourPercentage = Float(round(rumour.hoaxPercentage ))
+        let unknownPercentage = Float(round(rumour.unknownPercentage ))
+
+        statsTitleLabel.text = String(format:"\"%@\"", copiedString)
+        truthView.render("Fact", subtitle: String(format:"%.f %@", factPercentage,"%"), mode:.truth)
+        rumourView.render("Bruit", subtitle: String(format:"%.f %@", rumourPercentage,"%"), mode:.rumour)
+        unknownView.render("Unknown", subtitle: String(format:"%.f %@", unknownPercentage, "%"), mode:.unknown)
         
         var fact = Piechart.Slice()
         fact.value = CGFloat(rumour.factPercentage)
-        fact.color = UIColor.graphLeadsColor()
+        fact.color = UIColor.graphFactColor()
         
         var rumourSlice = Piechart.Slice()
         rumourSlice.value = CGFloat(rumour.hoaxPercentage)
-        rumourSlice.color = UIColor.graphProspectColor()
+        rumourSlice.color = UIColor.graphRumourColor()
         
         var unknown = Piechart.Slice()
         unknown.value = CGFloat(rumour.unknownPercentage)
         unknown.color = UIColor.graphGreyColor()
         
-//        var others = Piechart.Slice()
-//        others.value = CGFloat(100 - 50)
-//        others.color = UIColor.graphGreyColor()
-        
         graphView.slices = [fact, rumourSlice, unknown]
-        graphView.title = "\(rumour.factPercentage)%"
-        graphView.subtitle = rumour.statusText
+       
+        //Temp Fixes
+        if rumour.statusText == "hoax" {
+            graphView.title = "\(rumourPercentage)%"
+            graphView.subtitle = "Bruit"
+        }else if rumour.statusText == "fact"{
+            graphView.subtitle = "FACT"
+            graphView.title = "\(factPercentage)%"
+        }
+        else if rumour.statusText == "unknown" {
+            graphView.subtitle = "UNKNOWN"
+            graphView.title = "\(unknownPercentage)%"
+        }
+        // Load Graph View
         DispatchQueue.main.async {
             self.graphView.click()
         }
@@ -288,9 +323,19 @@ class InfoView: UIView {
         }
     }
     
-    func render(_ title: String, subtitle: String) {
+    func render(_ title: String, subtitle: String, mode:resultType) {
         titleLabel.text = title
         subTitleLabel.text = subtitle
+
+        switch mode {
+        case .truth:
+            titleLabel.textColor = UIColor.graphFactColor()
+        case .rumour:
+            titleLabel.textColor = UIColor.graphRumourColor()
+        case .unknown:
+            titleLabel.textColor = UIColor.graphGreyColor()
+
+        }
     }
     
     func render(_ title: String, subtitle: String, image: UIImage) {

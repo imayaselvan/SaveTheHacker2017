@@ -283,14 +283,14 @@ extension UIColor {
                        alpha:1.0)
     }
 
-    static func graphProspectColor() -> UIColor {
-        return UIColor(red:66/255.0,
-                       green:131/255.0 ,
-                       blue:252/255.0,
+    static func graphRumourColor() -> UIColor {
+        return UIColor(red:255/255.0,
+                       green:79/255.0 ,
+                       blue:83/255.0,
                        alpha:1.0)
     }
 
-    static func graphLeadsColor() -> UIColor {
+    static func graphFactColor() -> UIColor {
         return UIColor(red:135/255.0,
                        green:231/255.0 ,
                        blue:78/255.0,
